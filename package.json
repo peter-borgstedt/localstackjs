@@ -1,0 +1,28 @@
+{
+  "name": "localstackjs",
+  "version": "0.0.16",
+  "description": "A package for easily start and stop localstack",
+  "author": "Peter Borgstedt",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/enfogroupcloud/connect-marvin-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:peter-borgstedt/localstackjs.git"
+  },
+  "keywords": [
+    "localstack",
+    "js",
+    "javascript",
+    "node",
+    "nodejs"
+  ],
+  "main": "./index.js",
+  "bin": {
+    "localstackjs": "./index.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "dockerode": "3.0.2"
+  },
+  "devDependencies": {}
+}
