@@ -22,7 +22,7 @@ export const progressbar = new function () {
   };
 }();
 
-export const loader = async (promise) => {
+export const loader = async <T>(promise: Promise<T>): Promise<T> => {
   const interval = setInterval(() => process.stdout.write('.'), 1000);
   const result = await promise;
   clearInterval(interval);

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { loader } from '@common/downloadbar';
 import { getVersion, pullImage, getContainer, isRunning } from '@core/localstack';
 import { IMAGE_NAME, PREFIX } from '@core/constants';

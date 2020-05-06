@@ -1,2 +1,2 @@
 export * from './constants';
-export * from './localstac';
+export * from './localstack';

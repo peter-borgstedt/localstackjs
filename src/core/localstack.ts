@@ -1,11 +1,11 @@
 import Docker from 'dockerode';
-import { progressbar } from './../common/downloadbar';
+import { progressbar } from '@common/downloadbar';
 import {
   CONTAINER_NAME,
   IMAGE_NAME,
   PORTS,
   PREFIX
-} from '@common';
+} from '@core/constants';
 
 const docker = new Docker();
 

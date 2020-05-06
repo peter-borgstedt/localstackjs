@@ -19,25 +19,25 @@ const reformatOptions = {
     'repository', 'keywords', 'main', 'bin', 'dependencies', 'peerDependencies'
   ],
   append: {
-    dev: {
-      name: '@enfo/marvin-sdk-development',
+    local: {
+      name: 'localstackjs',
       main: "./index.js",
-      types: "./lib/main.d.ts"
+      types: "./index.d.ts"
     },
-    test: {
-      name: '@enfo/marvin-sdk-test',
+    alpha: {
+      name: 'localstackjs',
       main: "./index.js",
-      types: "./lib/main.d.ts"
+      types: "./index.d.ts"
     },
-    staging: {
-      name: '@enfo/marvin-sdk-staging',
+    beta: {
+      name: 'localstackjs',
       main: "./index.js",
-      types: "./lib/main.d.ts"
+      types: "./index.d.ts"
     },
-    prod: {
-      name: '@enfo/marvin-sdk',
+    final: {
+      name: 'localstackjs',
       main: "./index.js",
-      types: "./lib/main.d.ts"
+      types: "./index.d.ts"
     }
   },
 };
