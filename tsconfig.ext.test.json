@@ -1,45 +1,7 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
-    "target": "es2020",
-    "module": "commonjs",
-    "outDir": "./dist",
-    "declarationDir": "./dist",
-    "declaration": true,
-    "experimentalDecorators": true,
-    "strict": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "suppressExcessPropertyErrors": true,
-    "noUnusedLocals": false,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "paths": {
-        "@": ["src"],
-        "@/*": ["src/*"],
-        "@common": ["src/common"],
-        "@common/*": ["src/common/*"],
-        "@core": ["src/core"],
-        "@core/*": ["src/core/*"],
-        "@interfaces": ["src/interfaces"],
-        "@interfaces/*": ["src/interfaces/*"]
-    },
-    "typeRoots": [
-        "node_modules/@types",
-        "types"
-    ]
-  },
-  "lib": [
-    "es2020",
-    "esnext"
-  ],
+  "extends": "./tsconfig.json",
   "include": [
     "tests/**/*.ts",
     "types/*.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
   ]
 }

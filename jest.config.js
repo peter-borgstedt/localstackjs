@@ -1,5 +1,5 @@
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
-const { compilerOptions } = require('./tsconfig.ext.test.json');
+const { compilerOptions } = require('./tsconfig.json');
 
 // Set environments from env.yml
 const { setEnvironments } = require('./lib/env-loader');

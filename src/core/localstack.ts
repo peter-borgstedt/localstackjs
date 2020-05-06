@@ -1,5 +1,5 @@
 import Docker from 'dockerode';
-import { progressbar } from '@common/downloadbar';
+import { renderDownloadProgress } from '@/common/progress';
 import {
   CONTAINER_NAME,
   IMAGE_NAME,
@@ -26,7 +26,7 @@ export const pullImage = (): Promise<void> => new Promise(async (resolve, reject
       if (event.progressDetail) {
         const { current, total } = event.progressDetail;
         if (current && total) {
-          progressbar.draw(current, total);
+          renderDownloadProgress(current, total);
         }
       } else if (event.status && event.id) {
         console.log(`${PREFIX} ${event.status} (${event.id})`);
